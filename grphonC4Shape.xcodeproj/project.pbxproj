@@ -50,6 +50,7 @@
 		444D5D9F1735B88400D3E4FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444D5D2A1735B88300D3E4FE /* Foundation.framework */; };
 		444D5DA71735B88400D3E4FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 444D5DA51735B88400D3E4FE /* InfoPlist.strings */; };
 		444D5DAA1735B88400D3E4FE /* grphonC4ShapeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D5DA91735B88400D3E4FE /* grphonC4ShapeTests.m */; };
+		444D5DB51735B8B400D3E4FE /* customShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D5DB41735B8B400D3E4FE /* customShape.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,8 @@
 		444D5DA61735B88400D3E4FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		444D5DA81735B88400D3E4FE /* grphonC4ShapeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = grphonC4ShapeTests.h; sourceTree = "<group>"; };
 		444D5DA91735B88400D3E4FE /* grphonC4ShapeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = grphonC4ShapeTests.m; sourceTree = "<group>"; };
+		444D5DB31735B8B400D3E4FE /* customShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customShape.h; sourceTree = "<group>"; };
+		444D5DB41735B8B400D3E4FE /* customShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customShape.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				444D5D3F1735B88300D3E4FE /* C4WorkSpace.m */,
+				444D5DB31735B8B400D3E4FE /* customShape.h */,
+				444D5DB41735B8B400D3E4FE /* customShape.m */,
 				444D5D411735B88300D3E4FE /* Framework */,
 				444D5D671735B88400D3E4FE /* Media */,
 				444D5D701735B88400D3E4FE /* Logos */,
@@ -475,6 +480,7 @@
 				444D5D391735B88300D3E4FE /* main.m in Sources */,
 				444D5D3E1735B88300D3E4FE /* C4AppDelegate.m in Sources */,
 				444D5D401735B88300D3E4FE /* C4WorkSpace.m in Sources */,
+				444D5DB51735B8B400D3E4FE /* customShape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +671,7 @@
 				444D5DAF1735B88400D3E4FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		444D5DB01735B88400D3E4FE /* Build configuration list for PBXNativeTarget "grphonC4ShapeTests" */ = {
 			isa = XCConfigurationList;
@@ -673,6 +680,7 @@
 				444D5DB21735B88400D3E4FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
