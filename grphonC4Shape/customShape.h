@@ -12,11 +12,13 @@
 
 
 
-- (id)initWithColor:(UIColor *)fillColor origin:(CGPoint)point;
+-(id)initWithColor:(UIColor *)fillColor origin:(CGPoint)point;
 
 -(void)changeColorTo:(UIColor *)newColor;
 
 -(void)tapped;
+
+-(void)swipedRight;
 
 -(void)longPress;
 

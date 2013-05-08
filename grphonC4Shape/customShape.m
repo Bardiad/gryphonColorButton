@@ -12,6 +12,8 @@
 
 
 
+
+//Custom Init method that sets origin point and fillColor of new button
 - (id)initWithColor:(UIColor *)fillColor origin:(CGPoint)point{
     self = [super init];
     if (self){
@@ -22,7 +24,8 @@
         self.fillColor = fillColor;
         self.origin = point;
         [self addGesture:TAP name:@"tap" action:@"tapped"];
-       //This is still broken [self addGesture:LONGPRESS name:@"longpress" action:@"longPress"];
+        [self addGesture:SWIPERIGHT name:@"swipeRight" action:@"swipedRight"];
+        [self addGesture:LONGPRESS name:@"longpress" action:@"longPress"];
     }
     return self;
 }
@@ -33,19 +36,27 @@
 
 
 
-
+//Method to change objects fill color
 -(void)changeColorTo:(UIColor *)newColor{
     
     self.fillColor = newColor;
 }
 
+
+//Post notification that object has been tapped
 -(void)tapped {
     [self postNotification:@"tapNotification"];
 }
 
+//post notification that object has been swiped-right
+-(void)swipedRight{
+    [self postNotification:@"rightSwipeNotification"];
+}
 
+
+//post notification that object has been longpressed
 -(void)longPress{
-    [self postNotification:@"longPressNotification"];
+    [self postNotification:@"longPressNotificiation"];
 }
 
 
