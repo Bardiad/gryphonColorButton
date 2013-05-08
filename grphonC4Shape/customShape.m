@@ -25,7 +25,7 @@
         self.origin = point;
         [self addGesture:TAP name:@"tap" action:@"tapped"];
         [self addGesture:SWIPERIGHT name:@"swipeRight" action:@"swipedRight"];
-        [self addGesture:LONGPRESS name:@"longpress" action:@"longPress"];
+       //NOT SUPPORTED YET [self addGesture:LONGPRESS name:@"longpress" action:@"longPress"];
     }
     return self;
 }
